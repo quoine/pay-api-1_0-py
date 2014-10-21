@@ -38,7 +38,7 @@ if __name__ == "__main__":
         print "Authorizaton : " + auth_str
 
 	headers = {'User-Agent' : gbl.UserAgent, 'Date': theDate, 'Content-Type': gbl.ContentType, 'Content-MD5': cMD5,  'Authorization': auth_str } 
-	url = gbl.BaseURL + gbl.GetInvoicesURI + "?page=1&per=1"
+	url = gbl.BaseTestingURL + gbl.GetInvoicesURI + "?page=1&per=1"
 	print "URL : " + url
 	try:
 		req = urllib2.Request(url,None,headers)

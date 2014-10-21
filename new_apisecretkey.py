@@ -13,7 +13,7 @@ headers = {'User-Agent' : user_agent, 'Content-Type': gbl.ContentType }
 # replace following parameters with email, password from Quoine Pay web site
 data = '{"email": "example@gmail.com","password": "example"}'
 
-url = gbl.BaseURL + gbl.GetAPIKeyURI 
+url = gbl.BaseTestingURL + gbl.GetAPIKeyURI 
 print url
 skey = ""
 

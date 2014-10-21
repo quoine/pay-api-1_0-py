@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
 	headers = {'User-Agent' : gbl.UserAgent,'Date': theDate, 'Content-Type': gbl.ContentType, 'Content-MD5': cMD5,  'Authorization': auth_str } 
 
-	url = gbl.BaseURL + uri
+	url = gbl.BaseTestingURL + uri
         print "URL :: " + url
 	req = urllib2.Request(url,data,headers)
 

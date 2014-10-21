@@ -11,10 +11,11 @@ class Global():
 
 	UserId = "59"
 
-	# Base URL for API calls
-	BaseURL = "https://pay.quoine.com"
+	# URLs for API calls - test, production
+	BaseProductionURL = "https://pay.quoine.com"
+	BaseTestingURL = "https://pay-stag.quoine.com"
 
-	# URI parts for calling API - to be added to BaseURL per call
+	# URI parts for calling API - to be added to BaseXXXXURL per call
 	GetAPIKeyURI   = "/api/v1/api_secret_key/"			# [GET] 				
 	NewInvoiceURI  = "/api/v1/invoices"				# [POST] 				
 	GetInvoiceURI  = "/api/v1/invoices" 				# [GET]				

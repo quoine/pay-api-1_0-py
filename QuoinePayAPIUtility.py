@@ -82,7 +82,7 @@ def GetAPIKey():
 	headers = {'User-Agent' : gbl.UserAgent, 'Content-Type': gbl.ContentType }
 	data = '{"email": "tinwald@gmail.com","password": "Password88"}'
 
-	url = gbl.BaseURL + gbl.GetApiKeyURI
+	url = gbl.BaseTestingURL + gbl.GetApiKeyURI
 	req = urllib2.Request(url, data, headers)
 
 	skey = ""
