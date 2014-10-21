@@ -20,7 +20,7 @@ class Global():
 	GetInvoiceURI  = "/api/v1/invoices" 				# [GET]				
 	GetInvoicesURI = "/api/v1/invoices" 				# [GET]				
 	GetAccountURI  = "/api/v1/account"				# [GET] 				
-	SetPaymentsCallbackURI = "/api/v1/set_payments_callback"	# [POST] 	
+	SetPaymentsCallbackURI = "/api/v1/payments_callback_url"	# [POST] 	
 
 	def GetApiSecretKey(self):
 		key = ""
