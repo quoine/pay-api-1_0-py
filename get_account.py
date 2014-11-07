@@ -20,8 +20,7 @@ if __name__ == "__main__":
 	data = ""
 	ctype = gbl.ContentType
 	cMD5 = base64.b64encode(md5.new(data).digest())
-	print "MD5 :"
-	print cMD5
+	print "MD5 :" +  cMD5
 	uri = gbl.GetAccountURI
 	theDate = TimestampGMT()
 	str = "%s,%s,%s,%s" % (ctype,cMD5,uri,theDate)
@@ -41,7 +40,7 @@ if __name__ == "__main__":
 
 	headers = {'User-Agent' : gbl.UserAgent,'Date': theDate, 'Content-Type': gbl.ContentType, 'Content-MD5': cMD5,  'Authorization': auth_str } 
 
-	url = gbl.BaseURL + gbl.GetAccountURI
+	url = gbl.BaseTestingURL + gbl.GetAccountURI
 	req = urllib2.Request(url,None,headers)
 
 	try:
