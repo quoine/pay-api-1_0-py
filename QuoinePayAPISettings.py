@@ -12,15 +12,16 @@ class Global():
 	UserId = "59"
 
 	# Base URL for API calls
-	BaseURL = "https://pay.quoine.com"
+	BaseURL = "https://pay-stag.quoine.com"
 
 	# URI parts for calling API - to be added to BaseURL per call
-	GetAPIKeyURI   = "/api/v1/api_secret_key/"			# [GET] 				
-	NewInvoiceURI  = "/api/v1/invoices"				# [POST] 				
-	GetInvoiceURI  = "/api/v1/invoices" 				# [GET]				
-	GetInvoicesURI = "/api/v1/invoices" 				# [GET]				
-	GetAccountURI  = "/api/v1/account"				# [GET] 				
-	SetPaymentsCallbackURI = "/api/v1/set_payments_callback"	# [POST] 	
+	GetAPIKeyURI   = "/api/v1/api_secret_key/"			# [GET] 
+	NewInvoiceURI  = "/api/v1/invoices"					# [POST] 
+	GetInvoiceURI  = "/api/v1/invoices" 				# [GET]
+	GetInvoicesURI = "/api/v1/invoices" 				# [GET]
+	GetProfileURI  = "/api/v1/profile" 					# [GET]
+	GetAccountURI  = "/api/v1/account"					# [GET] 
+	SetPaymentsCallbackURI = "/api/v1/set_payments_callback" # [POST] 
 
 	def GetApiSecretKey(self):
 		key = ""
