@@ -45,7 +45,7 @@ if __name__ == "__main__":
 	print "B64 HASH : " + base64.encodestring(hash)
 
 	auth_str = "%s %s:%s" % ('APIAuth',gbl.UserId, base64.b64encode(hash))
-        print "Authorizaton : " + auth_str
+        print "Authorization : " + auth_str
 
 	headers = {'User-Agent' : gbl.UserAgent, 'Date': theDate, 'Content-Type': gbl.ContentType, 'Content-MD5': cMD5,  'Authorization': auth_str } 
 

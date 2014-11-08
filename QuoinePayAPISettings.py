@@ -11,9 +11,9 @@ class Global():
 
 	UserId = "59"
 
-<<<<<<< HEAD
-	# Base URL for API calls
-	BaseURL = "https://pay-stag.quoine.com"
+	# URLs for API calls - test, production
+	BaseProductionURL = "https://pay.quoine.com"
+	BaseTestingURL = "https://pay-stag.quoine.com"
 
 	# URI parts for calling API - to be added to BaseURL per call
 	GetAPIKeyURI   = "/api/v1/api_secret_key/"			# [GET] 
@@ -23,19 +23,6 @@ class Global():
 	GetProfileURI  = "/api/v1/profile" 					# [GET]
 	GetAccountURI  = "/api/v1/account"					# [GET] 
 	SetPaymentsCallbackURI = "/api/v1/set_payments_callback" # [POST] 
-=======
-	# URLs for API calls - test, production
-	BaseProductionURL = "https://pay.quoine.com"
-	BaseTestingURL = "https://pay-stag.quoine.com"
-
-	# URI parts for calling API - to be added to BaseXXXXURL per call
-	GetAPIKeyURI   = "/api/v1/api_secret_key/"			# [GET] 				
-	NewInvoiceURI  = "/api/v1/invoices"				# [POST] 				
-	GetInvoiceURI  = "/api/v1/invoices" 				# [GET]				
-	GetInvoicesURI = "/api/v1/invoices" 				# [GET]				
-	GetAccountURI  = "/api/v1/account"				# [GET] 				
-	SetPaymentsCallbackURI = "/api/v1/payments_callback_url"	# [POST] 	
->>>>>>> origin/master
 
 	def GetApiSecretKey(self):
 		key = ""
